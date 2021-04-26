@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>JS Hava Durumu </title>
+      <link rel="stylesheet" href="style.css"> *
+   </head>
+   <body onLoad="load()">
+      <div class="app">
+         <div class="header">
+            <h1> Hava Durumu</h1>
+            <select name="country" id="selectCountry" onchange="showCity()" style="width:200px;"></select>
+         <select name="city" id="selectCity" onchange="getResult(this)" style="width:200px;visibility: hidden;"></select>
+          </div>
+        
+         <div class="content">
+           <div class="city"> Istanbul ,TR</div>
+            <div class="temp">15°C</div>
+            <div class="desc"> Gunesli</div>
+            <div class="minmax"> 15°C /15°C</div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   </body>
+</html>
